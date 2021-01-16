@@ -37,12 +37,11 @@ def do(mat):
     quadrangle = get_max_quadrangle(corners)
     # raw = draw_corners(raw, quadrangle)
     # cv2.imshow('img', raw)
-    # cv2.imwrite("C:\\CODE\\python\\TEMP\\detector_server\\imgs\\out.png",raw)
+    # cv2.imwrite("./imgs/out.png",raw)
     return quadrangle
 
 def detect():
-    filename = "C:\\CODE\\python\\TEMP\\detector_server\\imgs\\file.png"
-    print(filename)
+    filename = "./imgs/file.png"
     mat = cv2.imread(filename)
     points = format_points(do(mat))
     return points
