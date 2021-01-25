@@ -86,9 +86,9 @@ def GetAreaOfPolyGonbyVector(points):
 
 def get_max_quadrangle(points):
     if points is None:
-        return None
+        return []
     if len(points)<4:
-        return None
+        return []
     points = points.tolist()
     points = [(i[0][0], i[0][1]) for i in points]
     points = list(itertools.combinations(points, 4))

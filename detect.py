@@ -40,7 +40,7 @@ def do(mat):
     # cv2.imwrite("./imgs/out.png",raw)
     return quadrangle
 
-def detect():
+def detect_pic():
     filename = "./imgs/file.png"
     mat = cv2.imread(filename)
     points = format_points(do(mat))
